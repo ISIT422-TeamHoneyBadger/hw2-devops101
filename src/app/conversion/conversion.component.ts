@@ -6,20 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./conversion.component.css']
 })
 export class ConversionComponent implements OnInit {
-  qty = 0;
-  cost = 0;
+  cInput = 15;
+  fInput = 68;
+  kInput = 300;
 
-  cInput = 0;
-  cTOf = 0;
-  cTOk = 0;
+  cTOf = c => { return (c * (1.8) + 32); }
+  cTOk = c => { return (parseInt(c) + 273.15); }
 
-  fInput = 0;
-  fTOc = 0;
-  fTOk = 0;
+  fTOc = f => { return ((f - 32) * (5/9)); }
+  fTOk = f => { return (parseInt(f) + 459.67) * (5 / 9); }
 
-  kInput = 0;
-  kTOc = 0;
-  kTOf = 0;
+  kTOc = k => { return (k - 273.15); }
+  kTOf = k => { return ((k * (9/5)) - 459.67); }
+
   constructor() { }
 
   ngOnInit() {

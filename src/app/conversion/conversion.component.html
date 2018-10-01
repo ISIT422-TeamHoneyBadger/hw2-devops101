@@ -1,8 +1,24 @@
-<fieldset class="boxed"><legend>Conversion</legend>
-  <div>
-    <input [(ngModel)]="cInput">
-    <p>F: {{(cInput * (1.8) + 32)}}</p>
-    <p>K: </p>
-  </div>
+<fieldset id="cnvt"><legend>ALL ABOUT CONVERSION</legend>
+  <fieldset>
+    <div>
+      <p>Celsius input: <input [(ngModel)]="cInput"></p>
+      <p>Converted to F: {{ cTOf(cInput) }}</p>
+      <p>Converted to K: {{ cTOk(cInput) }}</p>
+    </div>
+  </fieldset>
+  <fieldset>
+    <div>
+      <p>Fahrenheit input: <input [(ngModel)]="fInput"></p>
+      <p>Converted to C: {{ fTOc(fInput) }}</p>
+      <p>Converted to K: {{ fTOk(fInput) }}</p>
+    </div>
+  </fieldset>
+  <fieldset>
+    <div>
+      <p>Kelvin input: <input [(ngModel)]="kInput"></p>
+      <p>Converted to C: {{ kTOc(kInput) }}</p>
+      <p>Converted to F: {{ kTOf(kInput) }}</p>
+    </div>
+  </fieldset>
 </fieldset>
  
