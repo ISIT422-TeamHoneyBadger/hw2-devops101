@@ -8,7 +8,7 @@
 <h2>Here are some links to help you start: </h2>
 <ul>
   <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
+    <h2><a target="_blank" rel="noopener" href="./calculator/calculator.component.html">Tour of Heroes</a></h2>
   </li>
   <li>
     <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
@@ -18,3 +18,27 @@
   </li>
 </ul>
 
+<div>
+  <div>    
+    <label class="labels">Input 1:
+      <input [(ngModel)]="numberOne">
+    </label>
+  </div>
+  <div>
+    <label class="labels">Input 2:
+      <input [(ngModel)]="numberTwo">
+    </label>
+  </div>
+  <div>
+  {{numberOne}} + {{numberTwo}} = Sum: {{numberOne + numberTwo}}
+  </div>
+  <div>
+    {{numberOne}} - {{numberTwo}} = Difference: {{numberOne - numberTwo}}
+  </div>
+  <div>
+    {{numberOne}} x {{numberTwo}} = Product: {{numberOne * numberTwo}}
+  </div>
+  <div>
+    {{numberOne}} / {{numberTwo}} = Quotient: {{numberOne / numberTwo}}
+  </div>
+</div>
