@@ -5,12 +5,14 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { ConversionComponent } from './conversion/conversion.component';
+import { CalculatorComponent } from './calculator/calculator.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomepageComponent,
-    ConversionComponent
+    ConversionComponent,
+    CalculatorComponent
   ],
   imports: [
     BrowserModule,
